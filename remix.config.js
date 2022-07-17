@@ -1,0 +1,28 @@
+/** @type {import('@remix-run/dev').AppConfig} */
+module.exports = {
+  ignoredRouteFiles: ["**/.*"],
+  // appDirectory: "app",
+  // assetsBuildDirectory: "public/build",
+  // serverBuildPath: "build/index.js",
+  // publicPath: "/build/",
+  serverDependenciesToBundle: [
+    "notion-client",
+    "react-notion-x",
+    "notion-utils",
+    "p-queue",
+    "p-map",
+    "mimic-fn",
+    "is-url-superb",
+    "normalize-url",
+    "mem",
+    "p-timeout",
+    "aggregate-error",
+    "indent-string",
+    "clean-stack",
+    "react-notion-x/build/third-party/collection",
+    // "react-notion-x/build/third-party/pdf",
+    // "react-notion-x/build/third-party/modal",
+    // "react-notion-x/build/third-party/equation",
+    // "react-notion-x/build/third-party/code",
+  ],
+};
