@@ -383,7 +383,6 @@
   display: none;
 }
 
-
 @media only screen and (min-width: 920px) {
   .notion-table {
     overflow: hidden;

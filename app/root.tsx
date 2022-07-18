@@ -9,9 +9,8 @@ import {
 } from "@remix-run/react";
 
 import global from "./styles/global.css";
-import notion from 'react-notion-x/src/styles.css';
+import notion from "react-notion-x/src/styles.css";
 import custom from "./styles/notion.css";
-
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: global },

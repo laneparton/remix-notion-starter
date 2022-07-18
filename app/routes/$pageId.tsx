@@ -12,5 +12,7 @@ export const loader = async ({ params }) => {
 
 export default function NotionDynamicPage() {
   const pageData = useLoaderData();
-  return <NotionPage recordMap={pageData} rootPageId={siteConfig.rootNotionPageId} />
+  return (
+    <NotionPage recordMap={pageData} rootPageId={siteConfig.rootNotionPageId} />
+  );
 }
