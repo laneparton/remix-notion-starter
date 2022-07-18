@@ -5830,6 +5830,13 @@ p-map@^5.3.0:
   dependencies:
     aggregate-error "^4.0.0"
 
+p-memoize@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/p-memoize/-/p-memoize-7.1.0.tgz#6862c674faf66d0a8cd55d7bcf6f6d3ebd3dd7ea"
+  integrity sha512-CvZTCSwDg0JBLhZtvY5jSfrHwNAFrQfL+0X0GPVgwtTpruhHGTmdGkx8NSA5WNkti9N8FrHfsseFX1GW4guLww==
+  dependencies:
+    mimic-fn "^4.0.0"
+
 p-queue@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-7.2.0.tgz#e1430e4432f09b43aa8b4913d4c2ff7fdd685479"

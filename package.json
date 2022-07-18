@@ -18,6 +18,7 @@
     "express": "^4.18.1",
     "morgan": "^1.10.0",
     "notion-client": "^6.12.11",
+    "p-memoize": "^7.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-notion-x": "^6.12.11",

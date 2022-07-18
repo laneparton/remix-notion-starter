@@ -19,6 +19,7 @@ module.exports = {
     "aggregate-error",
     "indent-string",
     "clean-stack",
+    "p-memoize",
     "react-notion-x/build/third-party/collection",
     // "react-notion-x/build/third-party/pdf",
     // "react-notion-x/build/third-party/modal",

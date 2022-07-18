@@ -4,8 +4,9 @@ import { NotionPageHeader } from './NotionPageHeader'
 import styles from './styles.module.css'
 import { Collection } from 'react-notion-x/build/third-party/collection'
 import siteConfig from 'site.config'
+import { mapPageUrl } from '~/utils/map-page-url'
 
-export const NotionPage = ({ recordMap, rootPageId }) => {
+export const NotionPage = ({ recordMap }) => {
 
   console.log('notion page', {
     recordMap
@@ -18,6 +19,12 @@ export const NotionPage = ({ recordMap, rootPageId }) => {
     }),
     []
   )
+
+  const siteMapPageUrl = React.useMemo(() => {
+    const params: any = {}
+    const searchParams = new URLSearchParams(params)
+    return mapPageUrl(recordMap, searchParams)
+  }, [recordMap])
 
     return (
         <>
@@ -36,7 +43,7 @@ export const NotionPage = ({ recordMap, rootPageId }) => {
             // defaultPageIcon={config.defaultPageIcon}
             // defaultPageCover={config.defaultPageCover}
             // defaultPageCoverPosition={config.defaultPageCoverPosition}
-            // mapPageUrl={siteMapPageUrl}
+            mapPageUrl={siteMapPageUrl}
             // mapImageUrl={mapImageUrl}
             // searchNotion={config.isSearchEnabled ? searchNotion : null}
             // pageAside={pageAside}
